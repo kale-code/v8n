@@ -394,12 +394,12 @@ function which takes only a `value` as parameter. This `value` must be
 validated by this function and return `true` for valid value and `false` for
 invalid value.
 
-**Asynchronous custom rule structure:**
+**Asynchronous custom rule structure:\***
 
 A asynchronous custom rule looks like a basic custom rule, but instead of
-returning a function which returns a boolean value, it should return a function
-that returns a promise which resolves to `true` when the value is valid and to
-`false` when it's invalid.
+returning a function which returns `true` or `false`, it should return a
+function that returns a promise which resolves to `true` when the value is
+valid and to `false` when the value is invalid.
 
 ##### Parameters
 
@@ -568,10 +568,10 @@ value when it's valid and rejects with a [ValidationException](#validationexcept
 it's invalid or when an exception occurs.
 
 > To learn more about asynchronous validation, look at the
-> [Validation](#Validation) section.
+> [Validation](#validation) documentation section.
 >
 > For a validation strategy with non promise-based rules, you'd better use
-> the [test](#test) and [check](#check) functions.
+> the [test](#coretest) and [check](#corecheck) functions.
 
 ##### Parameters
 

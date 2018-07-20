@@ -263,10 +263,10 @@ const core = {
    * it's invalid or when an exception occurs.
    *
    * > To learn more about asynchronous validation, look at the
-   * > [Validation](#Validation) section.
+   * > {@link Validation} documentation section.
    *
    * > For a validation strategy with non promise-based rules, you'd better use
-   * > the [test](#test) and [check](#check) functions.
+   * > the {@link core.test test} and {@link core.check check} functions.
    *
    * @see ValidationException
    * @param {any} value the value to be validated
